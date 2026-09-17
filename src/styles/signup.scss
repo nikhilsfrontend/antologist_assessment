@@ -530,27 +530,65 @@
    Chat
 -------------------------------- */
 
+// .chat-button {
+//   position: absolute;
+
+//   right: 18px;
+//   bottom: 18px;
+
+//   width: 42px;
+//   height: 42px;
+
+//   border: 0;
+//   border-radius: 50%;
+
+//   background: $primary-color;
+
+//   color: white;
+
+//   cursor: pointer;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
 .chat-button {
-  position: absolute;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 
-  right: 18px;
-  bottom: 18px;
-
-  width: 42px;
-  height: 42px;
+  width: 60px;
+  height: 60px;
 
   border: 0;
   border-radius: 50%;
 
   background: $primary-color;
-
-  color: white;
-
-  cursor: pointer;
+  color: #fff;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
+
+  z-index: 9999;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+  }
+
+  &:active {
+    transform: scale(0.94);
+  }
 }
 
 /* --------------------------------
@@ -1215,6 +1253,10 @@
 
     .signup-logo {
     margin-left: -35px;
+  }
+
+  .chat-button {
+    display: none;
   }
 }
 

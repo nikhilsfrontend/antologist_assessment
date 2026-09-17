@@ -1,15 +1,3 @@
-// import SignupHeader from "./SignupHeader";
-// import SignupForm from "./SignupForm";
-
-// export default function SignupSection() {
-//   return (
-//     <section className="signup-section">
-//       <SignupHeader />
-//       <SignupForm />
-//     </section>
-//   );
-// }
-
 
 "use client";
 

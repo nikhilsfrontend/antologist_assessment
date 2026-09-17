@@ -343,21 +343,7 @@ User-friendly message
 
 ---
 
-## 10. CORS Handling
-
-During development, the external API initially produced a browser CORS/preflight issue.
-
-The request was adjusted to use `URLSearchParams` rather than explicitly sending a JSON content type.
-
-This allowed the request to work with the existing API behavior.
-
-The API communication and CORS flow were subsequently tested successfully.
-
-> CORS configuration is ultimately a server-side concern. The frontend should not rely on browser extensions as a production solution.
-
----
-
-## 11. Security Considerations
+## 10. Security Considerations
 
 A client-side suspicious-input guard was added.
 
@@ -387,7 +373,7 @@ The backend must remain the final security boundary.
 
 ---
 
-## 12. Password Security
+## 11. Password Security
 
 The password field includes a visibility toggle.
 
@@ -407,7 +393,7 @@ Sensitive values such as passwords and authentication credentials should not be 
 
 ---
 
-## 13. Google Signup
+## 12. Google Signup
 
 Google signup was added as an enhancement.
 
@@ -434,7 +420,7 @@ registerUserWithGoogle()
 
 ---
 
-## 14. Date Picker Enhancement
+## 13. Date Picker Enhancement
 
 The DOB field uses an interactive calendar picker.
 
@@ -453,7 +439,7 @@ This improves usability while keeping the underlying form value compatible with 
 
 ---
 
-## 15. Success Experience
+## 14. Success Experience
 
 After successful registration, the signup form transitions into a success state.
 
@@ -479,7 +465,7 @@ The success state contains:
 
 ---
 
-## 16. Sign-In Enhancement
+## 15. Sign-In Enhancement
 
 The signup header contains:
 
@@ -504,7 +490,7 @@ The sign-in UI is currently presented as an interface flow where applicable, whi
 
 ---
 
-## 17. Animation Strategy
+## 16. Animation Strategy
 
 Animations were implemented using CSS rather than introducing an additional animation dependency.
 
@@ -534,7 +520,7 @@ The submit button uses a subtle horizontal stretch effect when entering the UI.
 
 ---
 
-## 18. Reduced Motion
+## 17. Reduced Motion
 
 The application respects:
 
@@ -546,7 +532,7 @@ Animations are disabled or simplified when the user has enabled reduced motion.
 
 ---
 
-## 19. Performance Optimizations
+## 18. Performance Optimizations
 
 Performance was considered at several levels.
 
@@ -580,7 +566,7 @@ Animations are disabled when requested by the user.
 
 ---
 
-## 20. Responsive Strategy
+## 19. Responsive Strategy
 
 The responsive strategy was designed around actual layout requirements.
 
@@ -616,7 +602,7 @@ Additional refinements include:
 
 ---
 
-## 21. Accessibility
+## 20. Accessibility
 
 Accessibility considerations include:
 
@@ -634,7 +620,7 @@ Accessibility considerations include:
 
 ---
 
-## 22. What Was Required vs What Was Added
+## 21. What Was Required vs What Was Added
 
 ### Required by Assessment
 
@@ -719,7 +705,7 @@ Security-related checks are separated from the UI.
 
 ---
 
-## 23. Why These Enhancements Were Added
+## 22. Why These Enhancements Were Added
 
 The goal was not to add features simply for the sake of adding features.
 
@@ -744,7 +730,7 @@ The implementation therefore attempts to demonstrate **engineering judgment**, n
 
 ---
 
-## 24. Error Handling Strategy
+## 23. Error Handling Strategy
 
 Errors are handled at multiple levels.
 
@@ -777,7 +763,7 @@ This prevents all failures from being treated as the same type of error.
 
 ---
 
-## 25. Testing
+## 24. Testing
 
 The implementation was tested across different browser and viewport scenarios.
 
@@ -804,7 +790,7 @@ Testing covered:
 
 ---
 
-## 26. Environment Variables
+## 25. Environment Variables
 
 Create:
 
@@ -822,7 +808,7 @@ Do not commit `.env.local` to Git.
 
 ---
 
-## 27. Installation
+## 26. Installation
 
 Clone the repository:
 
@@ -850,7 +836,7 @@ http://localhost:3000
 
 ---
 
-## 28. Production Build
+## 27. Production Build
 
 Before deployment:
 
@@ -868,7 +854,7 @@ A successful production build verifies that the application can be compiled usin
 
 ---
 
-## 29. Project Principles
+## 28. Project Principles
 
 ### Separation of Concerns
 
@@ -900,7 +886,7 @@ Client-side checks are treated as an additional protection layer, not as a repla
 
 ---
 
-## 30. Assessment Compliance Summary
+## 29. Assessment Compliance Summary
 
 | Requirement | Status |
 |---|---|
@@ -928,7 +914,7 @@ Client-side checks are treated as an additional protection layer, not as a repla
 
 ---
 
-## 31. Conclusion
+## 30. Conclusion
 
 This implementation goes beyond reproducing the supplied Figma screen.
 
@@ -959,7 +945,7 @@ The result is a signup flow that satisfies the stated assessment requirements wh
 
 ---
 
-## 32. Engineering Notes
+## 31. Engineering Notes
 
 This project intentionally avoids unsupported claims such as:
 
